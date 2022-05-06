@@ -1,80 +1,104 @@
 body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #15241d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: rgb(17, 18, 19);
+    color: rgb(211, 232, 238);
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
-h1 {
-    
-    background-color: #b2dbc8;
-    width: 12em;
-    height: 1.5em;
-    border-radius: 2% 9% / 15% 40%;
-    color: #15241d;
-    font-weight: bold;
-    text-align:center;
-    font-size: 3.5em;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+header {
+    margin: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
-h2 {
-    font-weight: bold;
-    margin-bottom: 1em;
-    padding-bottom: 3em;
-    border-bottom: #172920 0.2em solid;
-    color: #b2dbc8;
-    text-align: center;
-    font-size: 2em;
-}
-
-img {
-    border-radius: 7% 20%;
-    width: 70%;
-}
-
-p {
-    font-size: 1.5em;
-    font-weight: bolder;
-}
-
-section {
-    margin: 3em;
-    color: #b2dbc8;
-    text-align: center;
-    /* border: white 1px solid; */
-    width: 30em;
-    height: 60em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-div {
-    font-weight: lighter;
-    margin: 0 15%;
-    /* border: solid 1px red; */
-    width: 70%;  
+#nav-main { 
+    font-size: 1em;  
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#radiobox {
-    width: 8em;
-    font-size: 1.5em;
-    margin-bottom: 4em;
+#logo-link {
+    width: 1.5em;
+}
+#logo {
+    width:70%;
+}
+
+#email {
+    width: 1.5%;
+}
+
+#welcome {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
+    flex-basis: 3em;
+    padding: 4em;
 }
 
-#likethis {
+#welcome-text-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+}
+
+#welcome-hey {
+    margin: 0em;
     font-size: 1.5em;
+    padding: 2em;
+    padding-left: 0em;
 }
 
+#welcome-aboutme {
+    width: 50%;
+    margin: 0em; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.welcome-more {
+    color: rgb(84, 194, 238);
+    text-decoration-line: none;
+}
+
+#img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
+.profile-picture {
+    
+    border-radius: 40%, 5%, 5%, 5%;
+}
+
+.aboutme {
+    color: rgb(211, 232, 238);
+    text-decoration-line: none;
+}
+
+.aboutme.about {  
+    text-decoration-line: underline;
+    text-underline-offset: 0.5em;
+}
+
+.portf {
+    color: rgb(211, 232, 238);
+    text-decoration-line: none;   
+}
+
+.portf.portfolio {
+    text-decoration-line: underline;
+    text-underline-offset: 0.5em;
+}
