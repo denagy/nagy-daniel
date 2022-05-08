@@ -49,15 +49,13 @@ header {
 }
 
 #welcome-hey {
-    margin: 0em;
-    font-size: 1.5em;
-    padding: 2em;
-    padding-left: 0em;
+    font-size: 1.4em;
+    padding: 1em;
+    margin: 0;
 }
 
 #welcome-aboutme {
-    width: 50%;
-    margin: 0em; 
+    width: 50%; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -65,7 +63,7 @@ header {
 }
 
 .welcome-more {
-    color: rgb(84, 194, 238);
+    color: rgb(114, 200, 238);
     text-decoration-line: none;
 }
 
@@ -80,7 +78,7 @@ header {
 
 .profile-picture {
     
-    border-radius: 40%, 5%, 5%, 5%;
+    border-radius: 3%;
 }
 
 .aboutme {
@@ -103,6 +101,31 @@ header {
     text-underline-offset: 0.5em;
 }
 
+.profiles {
+    display: flex;
+    flex-direction: column;
+}
+
+.profiles a {
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-decoration-line: none;
+    color: rgb(114, 200, 238);
+    display: flex;
+    align-items: center;
+}
+
+.profiles img {
+    padding-right: 1em;
+    width: 10%;
+}
+
+.profiles-title {
+    padding-top: 2em;
+    font-size: 1.4em;
+}
+
 
 
 
@@ -119,7 +142,7 @@ header {
 
     #welcome-text-img {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: flex-start;
         align-items: center;
     }
@@ -134,8 +157,8 @@ header {
 
     #img {
         width: 100%;
-        height: 30em;
-        padding: 1em;
+        height: 24em;
+        padding: 0em;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -143,7 +166,21 @@ header {
 
     .profile-picture {
         width: 90%;
+    }   
+
+    .profiles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profiles a {
+        display: flex;
+        padding-left: 1em;
     }
 
-    
+    .profiles-title {
+        padding-top: 2em;
+        padding-bottom: 1em;
+        margin: 0em;
+    }
 }
