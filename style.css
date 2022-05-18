@@ -2,6 +2,7 @@ body {
     font-family: 'Comfortaa', cursive;
     background-color: rgb(17, 18, 19);
     color: rgb(211, 232, 238);
+    -webkit-tap-highlight-color: transparent;
     line-height: 1.5;
     letter-spacing: 1px;
 }
@@ -81,9 +82,19 @@ header {
     border-radius: 3%;
 }
 
+@keyframes nav-color {
+    from {color: rgb(211, 232, 238);}
+    to {color: rgb(114, 200, 238);}
+  }
+
 .aboutme {
     color: rgb(211, 232, 238);
     text-decoration-line: none;
+}
+.aboutme:hover {
+    animation-name: nav-color;
+    animation-duration: 0.8s;
+    color: rgb(114, 200, 238);
 }
 
 .aboutme.about {  
@@ -94,6 +105,11 @@ header {
 .portf {
     color: rgb(211, 232, 238);
     text-decoration-line: none;   
+}
+.portf:hover {
+    animation-name: nav-color;
+    animation-duration: 0.8s;
+    color: rgb(114, 200, 238);
 }
 
 .portf.portfolio {
@@ -187,7 +203,13 @@ header {
     padding-left: 2em;
 }
 
-
+.inprogress {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 8em;
+}
 
 
 
