@@ -25,7 +25,7 @@ header {
     width: 1.5em;
 }
 .logo {
-    width:1.3em;
+    width:1.5em;
 }
 
 .email-icon {
@@ -231,6 +231,11 @@ header {
 
 
 @media (min-width: 100px) and (max-width: 700px) {
+
+    body {
+        font-size: 0.5em;
+    }
+
     header {
         margin-left: 0.5em;
         margin-right: 0.5em;
