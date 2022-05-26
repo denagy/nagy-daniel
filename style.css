@@ -87,6 +87,21 @@ header {
     to {color: rgb(114, 200, 238);}
   }
 
+.others {
+    color: rgb(211, 232, 238);
+    text-decoration-line: none;
+}
+.others:hover {
+    animation-name: nav-color;
+    animation-duration: 0.8s;
+    color: rgb(114, 200, 238);
+}
+
+.others.html {
+    text-decoration-line: underline;
+    text-underline-offset: 0.5em;
+}
+
 .aboutme {
     color: rgb(211, 232, 238);
     text-decoration-line: none;
@@ -97,7 +112,7 @@ header {
     color: rgb(114, 200, 238);
 }
 
-.aboutme.about {  
+.aboutme.html {  
     text-decoration-line: underline;
     text-underline-offset: 0.5em;
 }
@@ -112,7 +127,7 @@ header {
     color: rgb(114, 200, 238);
 }
 
-.portf.portfolio {
+.portf.html {
     text-decoration-line: underline;
     text-underline-offset: 0.5em;
 }
