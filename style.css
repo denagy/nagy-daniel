@@ -1,10 +1,14 @@
 body {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa';
     background-color: rgb(17, 18, 19);
     color: rgb(211, 232, 238);
     -webkit-tap-highlight-color: transparent;
     line-height: 1.5;
     letter-spacing: 1px;
+}
+
+.dropdown {
+    display: none;
 }
 
 header {
@@ -87,17 +91,17 @@ header {
     to {color: rgb(114, 200, 238);}
   }
 
-.others {
+.myNFTs {
     color: rgb(211, 232, 238);
     text-decoration-line: none;
 }
-.others:hover {
+.myNFTs:hover {
     animation-name: nav-color;
     animation-duration: 0.8s;
     color: rgb(114, 200, 238);
 }
 
-.others.html {
+.myNFTs.html {
     text-decoration-line: underline;
     text-underline-offset: 0.5em;
 }
@@ -228,17 +232,150 @@ header {
 
 
 
+@media (min-width: 600px) and (max-width: 1200px) {
 
 
-@media (min-width: 100px) and (max-width: 700px) {
+    .welcome {
+        align-items: center;
+    }
+
+    .welcome-hey {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .welcome-text-img {
+        width: 60%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .welcome {
+        padding: 0em;
+    }
+
+    .welcome-aboutme {
+        width: 90%; 
+    }
+
+    .img {
+        padding: 0em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 90%;
+    }   
+
+    .profiles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profiles a {
+        display: flex;
+        padding-left: 1em;
+    }
+
+    .profiles-title {
+        padding-top: 2em;
+        padding-bottom: 1em;
+        margin: 0em;
+    }
+
+    .ftr-bottom {
+        font-size: 0.6em;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .ftr-contact {
+        padding-right: 0;
+    }
+
+    .ftr-copyright {
+        padding-left: 0;
+    }
+    
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
 
     body {
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 
     header {
         margin-left: 0.5em;
         margin-right: 0.5em;
+    }
+
+    .aboutme, .portf, .portf, .myNFTs {
+        display: none;
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        display: none;
+        position:-ms-page;
+        background-color:  rgb(211, 232, 238);
+        box-shadow: 0em 0em 2em 0em rgba(0, 0, 0, 0.2);      
+    }
+
+    .dropdown-content a {
+        padding-top: 0.5em;
+        font-size: 1.2em;
+        font-weight: bolder;
+        height: 2em;
+        width: 10em;
+        color:  rgb(17, 18, 19);
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content:o {
+        
+    }
+
+    .dropdown-content.show {
+        margin-top: 1em;
+        border-radius: 0.3em 1em 0.3em 1em;
+        position:absolute;
+        right: 2em;
+        transform: translateX(60%);
+        display:block;
+        text-align: center;
+        
+    }
+
+    .dropdown-icon {
+    
+        width: 2em;
+        transition: all 0.8s ease-out;
+    }
+    
+    .dropdown-icon.change {
+        transform:rotate(180deg);
+    }
+
+    .logo {
+        width: 2em;
+    }
+
+    .email-icon {
+        width: 2.5em;
     }
 
     .welcome-hey {
