@@ -54,10 +54,15 @@ header {
 }
 
 .welcome-hey {
+    
     font-size: 1.4em;
     padding: 1em;
     padding-left: 0em;
     margin: 0;
+}
+
+.welcome-description {
+    color: rgb(162, 212, 233);
 }
 
 .welcome-aboutme {
@@ -66,6 +71,10 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     
+}
+
+.aboutme-description {
+    color: rgb(162, 212, 233);
 }
 
 .welcome-more {
@@ -150,6 +159,9 @@ header {
     display: flex;
     align-items: center;
 }
+.profiles a:hover {
+    color: rgb(116, 114, 238);
+}
 
 .profiles img {
     padding-right: 1em;
@@ -217,6 +229,9 @@ header {
     color: rgb(114, 200, 238);
     text-decoration-line: none;
 }
+footer a:hover {
+    color: rgb(116, 114, 238);
+}
 
 .ftr-copyright {
     padding-left: 2em;
@@ -228,6 +243,89 @@ header {
     justify-content: end;
     align-items: center;
     height: 8em;
+}
+
+.mynft-textcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    flex-basis: 3em;
+    padding: 4em;
+}
+
+.mynft-welcome {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.mynft-description {
+    padding-top: 2em;
+    color: rgb(162, 212, 233);;
+    
+}
+
+.nft1 img, .nft2 img, .nft3 img {
+    width: 60%;
+    border-radius: 3%;
+}
+
+.mynft-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mynft-content picture {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}   
+
+.nft1-textcontent, .nft2-textcontent, .nft3-textcontent  {
+    width: 100%;
+    text-align: center;
+
+}
+
+.nft1-textcontent p, .nft2-textcontent p, .nft3-textcontent p {
+    font-size: 0.8em;
+    margin: 0em;
+    padding-top: 1.8em;
+    padding-bottom: 0.5em;
+    color: rgb(211, 232, 238);;
+} 
+
+.nft1-textcontent a, .nft2-textcontent a, .nft3-textcontent a {
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(114, 200, 238);
+    text-decoration-line: none;
+} 
+.nft1-textcontent a:hover, .nft2-textcontent a:hover, .nft3-textcontent a:hover {
+    color: rgb(116, 114, 238);
+}
+
+.nft1, .nft2, .nft3 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nft-website {
+    padding-top: em;
+}
+
+.mynft-description-link {
+    color: rgb(114, 200, 238);
+    text-decoration-line: none;
+    font-weight: bold;
+}
+.mynft-description-link:hover {
+    color: rgb(116, 114, 238);
 }
 
 
@@ -434,6 +532,32 @@ header {
 
     .ftr-copyright {
         padding-left: 0;
+    }
+
+    .mynft-textcontent {
+        flex-basis: 1em;
+        padding-top: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    .mynft-description {
+        padding-top: 0em;
+    }
+
+    .mynft-content picture {
+        flex-direction: column;
+        align-items: center;
+        padding: 0em;
+    }
+
+    .nft1 img, .nft2 img, .nft3 img {
+        width: 100%;
+    }
+
+    .nft1, .nft2, .nft3 {
+        width: 80%;
+        padding-bottom: 5em;
     }
     
 }
