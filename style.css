@@ -316,7 +316,14 @@ footer a:hover {
 }
 
 .nft-website {
-    padding-top: em;
+    font-size: 3em;
+    font-weight: bol;
+    color: rgb(114, 200, 238);
+    text-decoration-line: none;
+    padding-top: 1em;
+}
+.nft-website:hover {
+    color: rgb(116, 114, 238);
 }
 
 .mynft-description-link {
@@ -327,11 +334,6 @@ footer a:hover {
 .mynft-description-link:hover {
     color: rgb(116, 114, 238);
 }
-
-.nft-website-icon {
-    width: 1%;
-}
-
 
 
 @media (min-width: 600px) and (max-width: 1200px) {
